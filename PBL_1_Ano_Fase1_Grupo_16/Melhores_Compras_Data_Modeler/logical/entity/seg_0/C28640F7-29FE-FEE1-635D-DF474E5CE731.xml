@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C28640F7-29FE-FEE1-635D-DF474E5CE731" name="MC_END_CLI">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<generatorID>19A1836D-80ED-6D53-E206-AB4ADB154658</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="EE6F39FD-8887-9686-C7DC-809F65F671F3">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:47:00 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<generatorID>42D009A8-49C8-0335-3DFB-F7033BCF699C</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>F401F00A-70F8-1181-69A0-320FD1410045</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_cliente_endereco" id="AB416FDD-3AA9-1E16-8450-21C693EE1EC5">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-07 23:39:54 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_end" id="66FB558F-5A6D-02B8-5E1E-1A0E02A58227">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></comment>
+<commentInRDBMS><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></commentInRDBMS>
+<generatorID>4E3AF31C-9C59-A736-9481-7962E7BDA7A4</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_complemento_end" id="31132A99-103E-E064-E54E-52F48DE45B41">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.]]></commentInRDBMS>
+<generatorID>41F5F223-2902-8602-1FF6-DB0AC9BC9FD9</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_end" id="11BEFEE3-BC45-0BA8-46E4-0C549ADD2C53">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></comment>
+<commentInRDBMS><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></commentInRDBMS>
+<generatorID>9E50EFF9-E0D6-F7D9-573C-40A2ACCA1F3A</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E23BC5F6-0F42-40B0-31BA-9403AA7DA994" name="MC_END_CLI PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:47:00 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EE6F39FD-8887-9686-C7DC-809F65F671F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

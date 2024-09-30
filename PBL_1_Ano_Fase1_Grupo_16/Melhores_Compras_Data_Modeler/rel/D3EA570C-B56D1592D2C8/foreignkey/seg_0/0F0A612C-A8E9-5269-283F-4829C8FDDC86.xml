@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0F0A612C-A8E9-5269-283F-4829C8FDDC86" containerWithKeyObject="4A01FE06-06D9-3D9F-432C-050D635DF1FB" localFKIndex="7AECD96F-1165-80D6-00AA-01271E281313" name="fk_estado">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>A470B738-D950-99FA-F8B0-170CC9A9A667</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<referredTableLongName>MC_ESTADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>87B5F9B2-C97E-FA7D-7A60-132087828C59</referredTableID>
+<keyObject>1AB0C3A9-824F-FCED-8073-C09349E7D908</keyObject>
+<referredKeyID>1AB0C3A9-824F-FCED-8073-C09349E7D908</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_estado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

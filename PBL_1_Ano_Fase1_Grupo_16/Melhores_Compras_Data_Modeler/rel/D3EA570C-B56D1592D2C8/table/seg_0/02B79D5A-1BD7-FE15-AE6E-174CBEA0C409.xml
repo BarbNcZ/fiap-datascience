@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02B79D5A-1BD7-FE15-AE6E-174CBEA0C409" name="MC_CLI_FISICA">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>65122254-E0C9-7DEA-1B3C-C53EA9DA98C8</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="24938DE3-F4F6-E3D5-A570-37662FB0FA5D">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<generatorID>17027614-32F5-D708-FC88-172CD47A9426</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8697C07F-12D7-217C-FA91-7D269869F559" referredColumn="041A33AB-5813-D4D6-AE73-D5641DEF082C"/>
+</associations>
+</Column>
+<Column name="nr_cpf" id="7163F48F-821B-FCDA-6861-1E90F97C9A75">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<generatorID>19BF6853-0578-6B01-0FDC-30646E7AC9E5</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="78993204-3A16-2C86-5BA0-DCA8D85FC3D3">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<generatorID>0305579E-B32B-9891-EC79-16A76FA2A433</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_genero" id="31FD0534-D851-4AB8-A730-F3DC8E94864E">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Genero do cliente. (M)asculino, (F)eminino ou (N)ao binario]]></commentInRDBMS>
+<generatorID>910B54C9-5D75-2FE5-6065-609ADFF4445C</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_genero" id="BC593415-F04B-695A-C222-D3179064F07E">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>E4BF8006-D359-6826-1EDE-0F141B08ADFF</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DEB6E30A-43D2-038D-D831-FAA06E95D59E" name="MC_CLI_FISICA_PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>B1D30BFF-C7CA-92C3-25C0-919316D8A54C</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24938DE3-F4F6-E3D5-A570-37662FB0FA5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4637CD6F-DB8E-6F56-FA71-2EF91EA79C80" name="UK_MC_CLI_FISICA_NR_CPF">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>64115BB6-82F6-CD99-FCA0-5BFF0D7C33CA</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7163F48F-821B-FCDA-6861-1E90F97C9A75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6307DA30-7803-1EAC-DC49-8F7867E0ABED" name="pk_p_fisica">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>19EF728C-7461-A53C-0CA0-BE6F5173CCBF</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24938DE3-F4F6-E3D5-A570-37662FB0FA5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

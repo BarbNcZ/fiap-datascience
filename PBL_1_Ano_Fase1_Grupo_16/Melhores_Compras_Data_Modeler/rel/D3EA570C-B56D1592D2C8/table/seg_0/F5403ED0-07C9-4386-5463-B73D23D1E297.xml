@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5403ED0-07C9-4386-5463-B73D23D1E297" name="MC_CL_VIDEO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>32BE9DE0-B7C4-2D8E-4255-EDB01DD770AD</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_classificacao" id="D2645AFC-46BA-FA6C-E653-793AC96B8D4D">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>AA29F789-C1ED-78D3-46C1-21EA19792126</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_video" id="8A86F7D5-D129-A426-92DF-FBC560A821AC">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de video: instalacao, uso no cotidiano, comercial etc]]></commentInRDBMS>
+<generatorID>2ECFA875-BABD-7A8F-2899-9E316641EF86</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E1EC84D-BE14-62F8-B404-644C6D576515" name="CL_VIDEO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>6909A08C-DE78-7A0F-CE65-BEFD687CBDEA</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2645AFC-46BA-FA6C-E653-793AC96B8D4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF39EC35-90E4-2E21-DEF1-403CF5F6C15B" name="UK_MC_CL_VIDEO_TP_VIDEO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>86875C62-9FC1-C345-C15D-4C85EDE118A5</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A86F7D5-D129-A426-92DF-FBC560A821AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

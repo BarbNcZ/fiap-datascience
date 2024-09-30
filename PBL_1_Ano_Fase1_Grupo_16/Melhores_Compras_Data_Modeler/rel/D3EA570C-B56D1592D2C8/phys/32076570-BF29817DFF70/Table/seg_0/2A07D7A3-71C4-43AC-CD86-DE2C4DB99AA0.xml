@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MC_CLIENTE" directorySegmentName="seg_0" id="2A07D7A3-71C4-43AC-CD86-DE2C4DB99AA0">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cd_cliente" id="041A33AB-5813-D4D6-AE73-D5641DEF082C">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nm_cliente" id="20034C03-AFA1-C045-3BF1-CDE913485B1A">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="st_cliente" id="36D1145A-BFE2-3257-E426-29200DAFEAF1">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ds_senha" id="84839488-7133-BEB3-E466-AF6D9CAD91C3">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nm_login" id="84D1998C-C58A-7054-BF27-4AA501774293">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ds_email" id="B3581EFC-7852-161E-C216-8453E3299B91">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_telefone" id="D750D711-DB90-9322-D297-7DDC3ADC1362">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vl_medio_compra" id="D8846561-618D-E293-81F0-DAC6D0A946D2">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="qt_estrelas" id="ED5B51BE-17CE-D081-A3D6-4FCAB2B4D578">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MC_CLIENTE_PK" id="F7BB5CDA-C932-CB91-F7EE-DB21F0BAFFAB">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="UK_MC_CLIENTE_NOME_CLIENTE" id="5378C40B-6ED3-122C-73A1-A04069BF72CA">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

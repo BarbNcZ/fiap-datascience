@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87B5F9B2-C97E-FA7D-7A60-132087828C59" name="MC_ESTADO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>20FC96D4-D3C5-B5F9-44C6-5C6E6CA4EB1D</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_estado" id="37A343C8-5F55-63DA-9F47-633871518545">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>C254BF11-4F85-9582-089B-8B065531DEA4</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AB0C3A9-824F-FCED-8073-C09349E7D908" name="MC_ESTADO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>88EEC727-8074-D0CD-75C9-C19EEEE30BAC</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37A343C8-5F55-63DA-9F47-633871518545"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

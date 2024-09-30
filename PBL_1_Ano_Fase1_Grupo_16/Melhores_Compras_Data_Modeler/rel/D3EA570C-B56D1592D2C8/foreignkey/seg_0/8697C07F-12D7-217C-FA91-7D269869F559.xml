@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8697C07F-12D7-217C-FA91-7D269869F559" containerWithKeyObject="02B79D5A-1BD7-FE15-AE6E-174CBEA0C409" localFKIndex="6307DA30-7803-1EAC-DC49-8F7867E0ABED" name="pk_p_fisica">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>19EF728C-7461-A53C-0CA0-BE6F5173CCBF</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<referredTableLongName>MC_CLIENTE</referredTableLongName>
+<arc>AC32AED6-6493-CE22-EC26-B7AA06DF3798</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A07D7A3-71C4-43AC-CD86-DE2C4DB99AA0</referredTableID>
+<keyObject>F7BB5CDA-C932-CB91-F7EE-DB21F0BAFFAB</keyObject>
+<referredKeyID>F7BB5CDA-C932-CB91-F7EE-DB21F0BAFFAB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_cliente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>cliente</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

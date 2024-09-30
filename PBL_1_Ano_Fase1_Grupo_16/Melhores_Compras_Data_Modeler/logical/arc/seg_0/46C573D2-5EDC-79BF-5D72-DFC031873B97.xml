@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="46C573D2-5EDC-79BF-5D72-DFC031873B97" name="Arc_2">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:08:38 UTC</createdTime>
+<ownerDesignName>PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<entity>732D0B08-C537-849B-F93F-5A55B2186B75</entity>
+<relations>
+<relationID>96301D74-8133-3B4F-8FDC-BD8D2DF0E4E7</relationID>
+<relationID>19EF728C-7461-A53C-0CA0-BE6F5173CCBF</relationID>
+</relations>
+</Arc>

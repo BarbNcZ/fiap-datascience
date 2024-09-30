@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9278BFA-5AA8-9F83-0F8A-6B040A2F3780" name="MC_BAIRRO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-07 23:43:59 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nm_bairro" id="B125C93B-3CDB-3A63-42A2-21A017694D14">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-07 23:44:10 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cidade" id="FBC4ECC3-C0EF-4D78-BDEE-65388649FE27">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:29:57 UTC</createdTime>
+<generatorID>0D450DA7-1A2C-0E87-978B-DA401A487419</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>72E3B00C-3DEF-5565-6423-AC8A893C4CF3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="873B7D42-287D-B944-E12E-1521AD430BEE" name="MC_BAIRRO PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:28:47 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B125C93B-3CDB-3A63-42A2-21A017694D14</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

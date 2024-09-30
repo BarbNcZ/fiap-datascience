@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="AC32AED6-6493-CE22-EC26-B7AA06DF3798" name="Arc_2">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>2A07D7A3-71C4-43AC-CD86-DE2C4DB99AA0</table>
+<discriminatorColumn>041A33AB-5813-D4D6-AE73-D5641DEF082C</discriminatorColumn>
+<fkeys>
+<fkeyID>EE5FFCF4-54C0-B436-CF41-4FE72DB37834</fkeyID>
+<fkeyID>8697C07F-12D7-217C-FA91-7D269869F559</fkeyID>
+</fkeys>
+</FKArc>

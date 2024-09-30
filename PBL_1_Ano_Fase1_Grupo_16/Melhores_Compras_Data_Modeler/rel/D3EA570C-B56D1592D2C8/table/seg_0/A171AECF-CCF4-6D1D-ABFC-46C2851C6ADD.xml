@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A171AECF-CCF4-6D1D-ABFC-46C2851C6ADD" name="MC_BAIRRO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>A9278BFA-5AA8-9F83-0F8A-6B040A2F3780</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nm_bairro" id="C0899D21-CE45-5BA1-69D0-80C21EF48A08">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>B125C93B-3CDB-3A63-42A2-21A017694D14</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cidade" id="CE230B48-F874-15D3-3C2E-EF07AC620B92">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>FBC4ECC3-C0EF-4D78-BDEE-65388649FE27</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FFD2DA6-FE80-49B1-074B-18BF1BCE9C8C" referredColumn="3C4E7BF9-1F00-8509-A48F-6A36F29583AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ECB0E4B3-3637-6BBE-6C13-7C7A2EF579F0" name="MC_BAIRRO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>873B7D42-287D-B944-E12E-1521AD430BEE</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0899D21-CE45-5BA1-69D0-80C21EF48A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59DB086C-BF49-ABA8-68F1-D76767F3146E" name="fk_cidade">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>0D450DA7-1A2C-0E87-978B-DA401A487419</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE230B48-F874-15D3-3C2E-EF07AC620B92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

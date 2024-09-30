@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_vis_video" directorySegmentName="seg_0" id="F565CA41-9F31-5B86-730F-DD3C805DD99C">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:42:42 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<sourcePk>CC859CB0-CDEA-2841-B218-1F53A8FDFA05</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>239D57E7-589B-5059-81BB-5E1D11FC1E45</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F34714C1-6255-1822-3093-74ABA38332C0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

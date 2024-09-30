@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MC_VIDEO" directorySegmentName="seg_0" id="D1FC5112-301A-C639-969B-0E77A702760A">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cd_video" id="2DC7CCA6-3E3A-8038-7FAE-BADC0AF34A51">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_classificacao" id="44C173EB-B1C1-7200-C6C8-C9B9C90F3E8F">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="st_video" id="4EC97F68-AF09-AFBA-B549-3FE9AC4BD65C">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cd_produto" id="8A9B846A-4A18-D394-208B-135A55E45F12">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="dt_cadastro_video" id="9271FFF1-FE15-2C13-E9E3-46DCB50A1FA1">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="fk_cl_video" id="3C4FEA30-CB18-2F8E-4B4D-C870BEFBADE6">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="pk_cd_produto" id="DFEF2530-90D2-D4F3-98CD-FB6B05204105">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="VIDEO_PK" id="7CB0B9C1-8871-29AE-544C-3167A2AF6E81">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

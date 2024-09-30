@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_estado" directorySegmentName="seg_0" id="A470B738-D950-99FA-F8B0-170CC9A9A667">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:28:24 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<sourcePk>88EEC727-8074-D0CD-75C9-C19EEEE30BAC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>20FC96D4-D3C5-B5F9-44C6-5C6E6CA4EB1D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>59DB691D-C5AE-75AB-B10C-04B05A15DD99</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A3E2248A-D6EC-DC27-7701-1854BBB74EFB" name="MC_LOGRADOURO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 09:28:24 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="tp_logradouro" id="9B46959A-27B2-0723-7C51-DE73EEB03E6E">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 09:28:36 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_bairro" id="B2E1A248-B2B1-799C-87A0-C9445305682A">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:30:34 UTC</createdTime>
+<generatorID>9088D43C-AAE1-8CBF-F38D-F5B25317BD44</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>B125C93B-3CDB-3A63-42A2-21A017694D14</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="44C2C2B2-775F-6F34-D75C-2EEC3EA00543">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 18:04:56 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<generatorID>59E5D491-682B-012C-0B5E-CADEA35A54D8</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>EE6F39FD-8887-9686-C7DC-809F65F671F3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_fun" id="D2771719-4DF9-3C30-7665-7F2835573342">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 18:05:08 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></comment>
+<generatorID>F751F0F2-B185-0758-2A4B-140CB2DBBD48</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>1E5ADFAD-0A77-4439-8934-0DBDDE9F5AB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4FE9B6F7-4235-8697-19E1-9EA8F8FB263A" name="MC_LOGRADOURO PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 09:28:55 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9B46959A-27B2-0723-7C51-DE73EEB03E6E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

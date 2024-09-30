@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0002926E-BB0B-EE59-3037-7EB3C96D9CEB" name="MC_DEPTO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>03CCA421-BAC6-5967-5091-BB423AC97255</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_departamento" id="BEA05443-9544-DFAB-38EB-5510B2C2220A">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>7DDFB79F-4F6B-CE1D-7854-241305D04174</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_departamento" id="9F766A21-E4F2-0519-3396-7AFCDB7AADA4">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>810FEE3E-0F96-EA07-D693-280FF778FF08</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_departamento" id="3BEDE72C-6B52-356B-7017-E51A1E8D6544">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.]]></commentInRDBMS>
+<generatorID>000DC660-212A-494E-0869-E449FBFE0D84</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B336E6EC-4D09-C23D-6CC3-3D6F3A985410" name="MC_DEPTO_PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>43DE4D02-F125-A957-BB6B-853E779EC50D</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEA05443-9544-DFAB-38EB-5510B2C2220A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56D20FC9-14C4-1097-1D5F-547930EDA70C" name="UK_MC_DPTO_NM_DEPARTAMENTO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>755176B3-1600-1C4D-59E5-A57FE9B98434</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F766A21-E4F2-0519-3396-7AFCDB7AADA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

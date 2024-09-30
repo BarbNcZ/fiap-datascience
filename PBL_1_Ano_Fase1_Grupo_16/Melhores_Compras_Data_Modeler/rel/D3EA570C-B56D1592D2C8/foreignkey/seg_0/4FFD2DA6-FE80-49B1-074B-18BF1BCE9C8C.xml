@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4FFD2DA6-FE80-49B1-074B-18BF1BCE9C8C" containerWithKeyObject="A171AECF-CCF4-6D1D-ABFC-46C2851C6ADD" localFKIndex="59DB086C-BF49-ABA8-68F1-D76767F3146E" name="fk_cidade">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>0D450DA7-1A2C-0E87-978B-DA401A487419</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<referredTableLongName>MC_CIDADE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4A01FE06-06D9-3D9F-432C-050D635DF1FB</referredTableID>
+<keyObject>DE32C82A-5AD4-2002-B477-5097BA6BA9DA</keyObject>
+<referredKeyID>DE32C82A-5AD4-2002-B477-5097BA6BA9DA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nm_cidade</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

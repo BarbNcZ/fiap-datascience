@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pk_cd_produto" directorySegmentName="seg_0" id="458C1C8C-FE80-7465-2172-43E48706BD82">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-04 17:59:04 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<sourcePk>46578E40-A179-43BB-3DC2-E063115A76B8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>564526E6-9CE0-D03F-CD10-EE14A5EC0E29</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>239D57E7-589B-5059-81BB-5E1D11FC1E45</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

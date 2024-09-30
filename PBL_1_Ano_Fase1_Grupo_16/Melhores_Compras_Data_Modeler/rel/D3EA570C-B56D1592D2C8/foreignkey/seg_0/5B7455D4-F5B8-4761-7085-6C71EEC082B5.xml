@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5B7455D4-F5B8-4761-7085-6C71EEC082B5" containerWithKeyObject="A75EBDF8-1931-3609-2E7D-0E1B1D028327" localFKIndex="34519107-B96D-AA04-E3AF-39F2B316D5EF" name="fk_end_func">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 18:18:56 UTC</createdTime>
+<generatorID>F751F0F2-B185-0758-2A4B-140CB2DBBD48</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<referredTableLongName>MC_END_FUNC</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5A228223-3010-307F-0E64-229CFA39CD06</referredTableID>
+<keyObject>21985E38-4DB3-DF85-8F58-46537AFE3674</keyObject>
+<referredKeyID>21985E38-4DB3-DF85-8F58-46537AFE3674</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_fun</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

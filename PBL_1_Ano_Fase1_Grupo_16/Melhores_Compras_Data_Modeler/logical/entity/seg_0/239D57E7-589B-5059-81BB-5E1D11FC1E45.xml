@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="239D57E7-589B-5059-81BB-5E1D11FC1E45" name="MC_VIDEO">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-02 13:07:51 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_video" id="155615C6-3CD3-3B40-CB89-244C14487189">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-04 18:02:04 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_produto" id="8E15F704-3744-39AD-12AB-BD0C94E22AD4">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-04 17:59:04 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<generatorID>458C1C8C-FE80-7465-2172-43E48706BD82</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>2D0729E2-3896-A8CB-8ECB-8D20F972A898</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_classificacao" id="1F6149B2-E454-FD63-63DB-98EE447AE44A">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 11:17:12 UTC</createdTime>
+<generatorID>8A15A635-28E0-98E4-4188-9F330854D631</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<referedAttribute>AA29F789-C1ED-78D3-46C1-21EA19792126</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_video" id="6FCF6ADE-6A37-2D5E-DEF5-6EA8A2581316">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-02 13:08:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do video]]></commentInRDBMS>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_cadastro_video" id="6919BF23-98B6-59E9-2351-088221DF920E">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-02 13:14:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de postagem do video]]></commentInRDBMS>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CC859CB0-CDEA-2841-B218-1F53A8FDFA05" name="VIDEO PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-04 18:02:25 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>155615C6-3CD3-3B40-CB89-244C14487189</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

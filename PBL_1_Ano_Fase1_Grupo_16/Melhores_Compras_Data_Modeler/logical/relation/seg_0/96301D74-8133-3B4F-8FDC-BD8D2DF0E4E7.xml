@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pk_p_juridica" directorySegmentName="seg_0" id="96301D74-8133-3B4F-8FDC-BD8D2DF0E4E7">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-04 18:16:02 UTC</createdTime>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<sourcePk>11FC6FFD-7A8E-0794-F739-CE1B314C2007</sourcePk>
+<arc>46C573D2-5EDC-79BF-5D72-DFC031873B97</arc>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>732D0B08-C537-849B-F93F-5A55B2186B75</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0F5720E6-647D-1DD0-16ED-3ABCC893DBDC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

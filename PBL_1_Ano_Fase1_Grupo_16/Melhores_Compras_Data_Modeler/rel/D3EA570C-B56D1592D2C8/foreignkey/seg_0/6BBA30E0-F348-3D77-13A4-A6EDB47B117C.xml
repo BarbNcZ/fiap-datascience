@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6BBA30E0-F348-3D77-13A4-A6EDB47B117C" containerWithKeyObject="FAED874B-ED5F-96AA-96B0-41E5B848B759" localFKIndex="A4BC6980-D567-B630-FEB6-25A2D13ACCC7" name="pk_cat_produto">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>EA11E31C-02B6-5BDD-A2E5-E8770D129F97</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<referredTableLongName>MC_CATEGORIA_PROD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D3CB125D-B5E4-7391-92B4-384EA15F5CBA</referredTableID>
+<keyObject>7294FC5B-F96E-A4BB-7959-5C07E22DC84A</keyObject>
+<referredKeyID>7294FC5B-F96E-A4BB-7959-5C07E22DC84A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_categoria</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

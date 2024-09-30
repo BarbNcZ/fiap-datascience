@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="62F855C8-D1B5-0173-A243-3E71168C8DA1" containerWithKeyObject="D1FC5112-301A-C639-969B-0E77A702760A" localFKIndex="3C4FEA30-CB18-2F8E-4B4D-C870BEFBADE6" name="fk_cl_video">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>8A15A635-28E0-98E4-4188-9F330854D631</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<referredTableLongName>MC_CL_VIDEO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F5403ED0-07C9-4386-5463-B73D23D1E297</referredTableID>
+<keyObject>5E1EC84D-BE14-62F8-B404-644C6D576515</keyObject>
+<referredKeyID>5E1EC84D-BE14-62F8-B404-644C6D576515</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_classificacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

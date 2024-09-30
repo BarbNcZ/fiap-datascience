@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A228223-3010-307F-0E64-229CFA39CD06" name="MC_END_FUNC">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>9645F383-B531-0ABA-A679-278A12E013EF</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_fun" id="468C545A-D220-5396-FA08-03B4D75164AD">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></comment>
+<generatorID>1E5ADFAD-0A77-4439-8934-0DBDDE9F5AB0</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0B5E1F8-F292-31D2-35C4-F52971214E81" referredColumn="E2559073-4DDC-191D-A338-5DD17D42CB43"/>
+</associations>
+</Column>
+<Column name="tp_func_endereco" id="67C64226-3C7F-C2CA-F986-24A45A5F68C0">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>416EF809-54DA-7445-E00B-72A78AE42E2B</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_end" id="D5D7349A-7016-9847-1963-A4975948F07A">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></comment>
+<commentInRDBMS><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></commentInRDBMS>
+<generatorID>5CB0F4A0-8B91-F969-47E3-B4067D57FEF3</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_end" id="8CBE4EEE-E740-2B5B-7A0B-11F234121AF2">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></comment>
+<generatorID>42A19E47-03F3-392B-ED82-571A8F56A4AA</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_complemento_end" id="D05FAFE8-8D0B-A740-8877-BADEFE05F2B2">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<comment><![CDATA[Logradouro do Cliente.]]></comment>
+<generatorID>10B69654-4DE8-53E3-8149-504868C84B6C</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21985E38-4DB3-DF85-8F58-46537AFE3674" name="MC_END_FUNC_PK">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>D8D1E728-9C0F-4900-A44B-2B17C02ECB96</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="468C545A-D220-5396-FA08-03B4D75164AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45605933-B19B-2BEF-7EC2-2D59A90779F4" name="pk_cd_funcionario">
+<createdBy>USER</createdBy>
+<createdTime>2024-09-10 12:16:26 UTC</createdTime>
+<generatorID>631F1B39-B24D-DF42-2550-19A960EB2360</generatorID>
+<ownerDesignName>PROJETO SIP NOVO</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="468C545A-D220-5396-FA08-03B4D75164AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
