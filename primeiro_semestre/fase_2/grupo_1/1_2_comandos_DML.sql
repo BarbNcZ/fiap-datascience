@@ -1,10 +1,10 @@
---> a)
+-- Resposta do comando SQL item a)
 insert into mc_depto (nm_depto, st_depto) values ('Comercial', 'A');
 insert into mc_depto (nm_depto, st_depto) values ('Financeiro', 'A');
 insert into mc_depto (nm_depto, st_depto) values ('SAC', 'A');
 select * from mc_depto;
 
---> b)
+-- Resposta do comando SQL item b)
 insert into mc_funcionario (
     cd_depto, 
     nm_funcionario, 
@@ -26,7 +26,7 @@ insert into mc_funcionario (
     'felipe@oracle.com',
     'A',
     sysdate);
-    
+
 insert into mc_funcionario (
     cd_depto, 
     cd_gerente,
@@ -91,14 +91,15 @@ insert into mc_funcionario (
     to_date('06/09/1999', 'DD/MM/YYYY'), 
     'M', 
     'Homem cis', 
-    'Estagiário', 
+    'Gerente',
     100200.00,
     'guilherme@oracle.com',
     'A',
     sysdate);
     
 insert into mc_funcionario (
-    cd_depto, 
+    cd_depto,
+    cd_gerente,
     nm_funcionario, 
     dt_nascimento, 
     fl_sexo_biologico, 
@@ -108,7 +109,8 @@ insert into mc_funcionario (
     ds_email, 
     st_func, 
     dt_cadastramento) values (
-    2, 
+    2,
+    2,
     'Barbara', 
     to_date('05/08/1997', 'DD/MM/YYYY'), 
     'F', 
@@ -120,7 +122,8 @@ insert into mc_funcionario (
     sysdate);
     
 insert into mc_funcionario (
-    cd_depto, 
+    cd_depto,
+    cd_gerente,
     nm_funcionario, 
     dt_nascimento, 
     fl_sexo_biologico, 
@@ -130,7 +133,8 @@ insert into mc_funcionario (
     ds_email, 
     st_func, 
     dt_cadastramento) values (
-    2, 
+    2,
+    2,
     'Gisele', 
     to_date('05/08/1997', 'DD/MM/YYYY'), 
     'F', 
@@ -140,11 +144,10 @@ insert into mc_funcionario (
     'gisele@oracle.com',
     'A',
     sysdate);
-    
-    
+
 select * from mc_funcionario;
 
---> c)
+-- Resposta do comando SQL item c)
 insert into mc_estado (sg_estado, nm_estado) values ('SP', 'Sao Paulo');
 insert into mc_estado (sg_estado, nm_estado) values ('RJ', 'Rio de Janeiro');
 insert into mc_estado (sg_estado, nm_estado) values ('MG', 'Minas Gerais');
@@ -170,11 +173,11 @@ insert into mc_logradouro (cd_bairro, nm_logradouro, nr_cep) values(3, 'Avenida 
 insert into mc_logradouro (cd_bairro, nm_logradouro, nr_cep) values(4, 'Rua Francisco Vaz de Magalhaes', 36033340);
 insert into mc_logradouro (cd_bairro, nm_logradouro, nr_cep) values(4, 'Rua Joaquim Carneiro Filho', 36033320);
 
---> d)
+-- Resposta do comando SQL item d)
 insert into mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (1, 1, 201, to_date('05/08/1997', 'DD/MM/YYYY'), 'A');
 insert into mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (2, 3, 500, to_date('05/08/2000', 'DD/MM/YYYY'), 'A');
 
---> e)
+-- Resposta do comando SQL item e)
 insert into mc_cliente (
     nm_cliente, 
     qt_estrelas, 
@@ -200,7 +203,7 @@ insert into mc_cli_fisica (
     dt_nascimento, 
     fl_sexo_biologico, 
     ds_genero, 
-    nr_cpf,) values (
+    nr_cpf) values (
     1,
     to_date('05/08/1997', 'DD/MM/YYYY'),
     'M',
@@ -246,7 +249,7 @@ insert into mc_cli_fisica (
     dt_nascimento, 
     fl_sexo_biologico, 
     ds_genero, 
-    nr_cpf,) values (
+    nr_cpf) values (
     2,
     to_date('15/08/1994', 'DD/MM/YYYY'),
     'F',
@@ -312,10 +315,9 @@ insert into mc_end_cli (
     to_date('23/04/2010','DD/MM/YYYY'),
     'A');
 
-select* from mc_end_cli
---> ASSOCIAR UM ENDERECO PRA CADA CLIENTE
+select* from mc_end_cli;
 
---> f)
+-- Resposta do comando SQL item f)
     
 insert into mc_cliente (
     nm_cliente, 
@@ -336,7 +338,9 @@ insert into mc_cliente (
         'marcelo1234'
     );
 
---> g)
+-- Não foi possivel, devido a restrição de chave unica no nome do cliente.
+
+-- Resposta do comando SQL item g)
  
 insert into mc_categoria_prod (
     tp_categoria,
@@ -368,7 +372,7 @@ insert into mc_categoria_prod (
     to_date('15/11/2000','DD/MM/YYYY'),
     'A');    
     
---> h)
+-- Resposta do comando SQL item h)
 
 insert into mc_produto (
     cd_categoria,
@@ -431,7 +435,7 @@ insert into mc_produto (
     'A',
     'Computador aesthetic com peças de colecionador em perfeito estado. (TODAS AS PEÇAS EM COR DE ROSA)');
 
---> i)
+-- Resposta do comando SQL item i)
 
 insert into mc_categoria_prod (
     tp_categoria,
@@ -453,7 +457,7 @@ insert into mc_categoria_prod (
     to_date('29/11/2000','DD/MM/YYYY'),
     'A');
 
---> j)
+-- Resposta do comando SQL item j)
 
 insert into mc_sgv_produto_video (
     cd_produto,
@@ -475,9 +479,7 @@ insert into mc_sgv_produto_video (
     1,
     'A');
 
-
---> k)
-
+-- Resposta do comando SQL item k)
 
 insert into mc_sgv_visualizacao_video (
     nr_cliente,
@@ -503,7 +505,7 @@ insert into mc_sgv_visualizacao_video (
     nr_hora_visualizacao,
     nr_minuto_video,
     nr_segundo_video) values (
-    7,
+    2,
     3,
     2,
     to_date('25/03/2020','DD/MM/YYYY'),
@@ -512,15 +514,12 @@ insert into mc_sgv_visualizacao_video (
     50);
 
 
---> l)
+-- Resposta do comando SQL item l)
 
 commit;
 
---> m)
-    
-select * from mc_funcionario
-    where cd_funcionario=1;
-    
+-- Resposta do comando SQL item m)
+
 update
     mc_funcionario 
 set 
@@ -529,11 +528,8 @@ set
 where 
     cd_funcionario=1;
     
---> n)
+-- Resposta do comando SQL item n)
 
-select * from mc_depto
-    where nm_depto='Fiscalizacao';
-    
 update 
     mc_depto
 set
@@ -541,23 +537,16 @@ set
 where
     nm_depto='Financeiro';
 
---> o)
+-- Resposta do comando SQL item o)
 
-
-select * from mc_cli_fisica
-    where nr_cliente=1;
-    
 update 
     mc_cli_fisica
 set
-    dt_nascimento=to_date('31/07/1995','DD/MM/YYYY')
+    dt_nascimento=to_date('18/05/2002','DD/MM/YYYY')
 where
     nr_cliente=1;
 
---> p)
-
-select * from mc_funcionario
-    where cd_funcionario=2;
+-- Resposta do comando SQL item p)
     
 update 
     mc_funcionario
@@ -567,12 +556,8 @@ set
 where
     cd_funcionario=2;
 
+-- Resposta do comando SQL item q)
 
---> q)
-
-select * from mc_end_cli
-    where nr_cliente=1;
-    
 update 
     mc_end_cli
 set
@@ -581,63 +566,22 @@ set
 where
     nr_cliente=1;
 
+-- Resposta do comando SQL item r)
 
---> r)
---> Como ja existe um registro filho, nao e possivel eliminar
+delete from mc_estado where sg_estado='SP';
 
-delete from mc_estado where sg_estado='SP'
+-- Como ja existe um registro filho, nao e possivel eliminar
 
---> s)
---> Nao e possivel alterar por que possui uma check costraint que possui valor 'A' ou 'I'
-select * from mc_produto
-    where cd_produto=5;
-    
+-- Resposta do comando SQL item s)
+
 update 
     mc_produto
 set
-    st_produto='X',
+    st_produto='X'
 where
     cd_produto=5;
-    
 
-
---> FASE DOIS 
---> a)
-select
-    cp.cd_categoria,
-    cp.ds_categoria,
-    p.cd_produto,
-    p.ds_produto,
-    p.vl_unitario,
-    p.tp_embalagem,
-    p.vl_perc_lucro
-from mc_categoria_prod cp
-left join mc_produto p on p.cd_categoria = cp.cd_categoria
-
---> b)
-select
-    c.nr_cliente,
-    c.nm_cliente,
-    c.ds_email,
-    c.nr_telefone,
-    c.nm_login,
-    cf.dt_nascimento,
-    extract(day from dt_nascimento) dia_nascimento,
-    sysdate - cf.dt_nascimento anos_vida,
-    cf.fl_sexo_biologico,
-    cf.nr_cpf
-from mc_cliente c
-inner join mc_cli_fisica cf on cf.nr_cliente = c.nr_cliente
-
---> c)
-select
-    vv.cd_produto,
-    p.ds_produto,
-    vv.dt_visualizacao
-from mc_sgv_visualizacao_video vv
-inner join mc_produto p on p.cd_produto = vv.cd_produto
-order by vv.dt_visualizacao desc 
-
+-- Nao e possivel alterar por que possui uma check costraint que possui valor 'A' ou 'I'
 
 commit;
 
