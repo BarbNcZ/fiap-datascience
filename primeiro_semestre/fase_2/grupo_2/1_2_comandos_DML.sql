@@ -1,10 +1,8 @@
---> a)
 insert into mc_depto (nm_depto, st_depto) values ('Comercial', 'A');
 insert into mc_depto (nm_depto, st_depto) values ('Financeiro', 'A');
 insert into mc_depto (nm_depto, st_depto) values ('SAC', 'A');
 select * from mc_depto;
 
---> b)
 insert into mc_funcionario (
     cd_depto, 
     nm_funcionario, 
@@ -144,7 +142,6 @@ insert into mc_funcionario (
     
 select * from mc_funcionario;
 
---> c)
 insert into mc_estado (sg_estado, nm_estado) values ('SP', 'Sao Paulo');
 insert into mc_estado (sg_estado, nm_estado) values ('RJ', 'Rio de Janeiro');
 insert into mc_estado (sg_estado, nm_estado) values ('MG', 'Minas Gerais');
@@ -170,11 +167,9 @@ insert into mc_logradouro (cd_bairro, nm_logradouro, nr_cep) values(3, 'Avenida 
 insert into mc_logradouro (cd_bairro, nm_logradouro, nr_cep) values(4, 'Rua Francisco Vaz de Magalhaes', 36033340);
 insert into mc_logradouro (cd_bairro, nm_logradouro, nr_cep) values(4, 'Rua Joaquim Carneiro Filho', 36033320);
 
---> d)
 insert into mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (1, 1, 201, to_date('05/08/1997', 'DD/MM/YYYY'), 'A');
 insert into mc_end_func (cd_funcionario, cd_logradouro, nr_end, dt_inicio, st_end) values (2, 3, 500, to_date('05/08/2000', 'DD/MM/YYYY'), 'A');
 
---> e)
 insert into mc_cliente (
     nm_cliente, 
     qt_estrelas, 
@@ -264,36 +259,13 @@ insert into mc_cli_juridica (
     dt_fundacao, 
     nr_cnpj, 
     nr_inscr_est) values (
-    2,
+    3,
     to_date('15/12/1999', 'DD/MM/YYYY'),
     20031219000246,
     388108598269
     );
 
 select * from mc_cli_juridica
-
---> f)
-    
-insert into mc_cliente (
-    nm_cliente, 
-    qt_estrelas, 
-    vl_medio_compra, 
-    st_cliente, 
-    ds_email, 
-    nr_telefone,
-    nm_login, 
-    ds_senha) values (
-        'Guilherme', 
-        5.00,
-        1000,
-        'A',
-        'guisushi@byshopping.com',
-        229944715,
-        'sushihot',
-        'awk3lecute'
-    );
-
---> g)
  
 insert into mc_categoria_prod (
     tp_categoria,
@@ -324,8 +296,6 @@ insert into mc_categoria_prod (
     'Pet Shop',
     to_date('15/11/2000','DD/MM/YYYY'),
     'A');    
-    
---> h)
 
 insert into mc_produto (
     cd_categoria,
@@ -388,8 +358,6 @@ insert into mc_produto (
     'A',
     'Computador aesthetic com peças de colecionador em perfeito estado. (TODAS AS PEÇAS EM COR DE ROSA)');
 
---> i)
-
 insert into mc_categoria_prod (
     tp_categoria,
     ds_categoria,
@@ -409,8 +377,6 @@ insert into mc_categoria_prod (
     'Uso no cotidiano',
     to_date('29/11/2000','DD/MM/YYYY'),
     'A');
-
---> j)
 
 insert into mc_sgv_produto_video (
     cd_produto,
@@ -447,5 +413,107 @@ values (
     30,
     10);
     
+
+--> A ATIVIDADE PROPOSTA SE INICIA AQUI
     
+--> a)
+
+select * from mc_cli_juridica;
+select * from mc_cli_fisica;
+select * from mc_cliente;
+select * from mc_logradouro;
+
+insert into mc_end_cli (
+    nr_cliente,
+    cd_logradouro_cli,
+    nr_end,
+    dt_inicio,
+    st_end) 
+    values (
+    1,
+    3,
+    45,
+    to_date('17/04/2024', 'DD/MM/YYYY'),
+    'A');
+
+insert into mc_end_cli (
+    nr_cliente,
+    cd_logradouro_cli,
+    nr_end,
+    dt_inicio,
+    st_end) 
+    values (
+    3,
+    6,
+    10,
+    to_date('21/01/2024', 'DD/MM/YYYY'),
+    'A');
+
+
+--> b)
+
+insert into mc_cliente (
+    nm_cliente, 
+    qt_estrelas, 
+    vl_medio_compra, 
+    st_cliente, 
+    ds_email, 
+    nr_telefone,
+    nm_login, 
+    ds_senha) values (
+        'Guilherme', 
+        5.00,
+        1000,
+        'A',
+        'guisushi@byshopping.com',
+        229944715,
+        'sushihot',
+        'awk3lecute'
+    );
+
+--> c)
+
+select * from mc_funcionario;
+select * from mc_depto;
+
+UPDATE mc_funcionario
+SET ds_cargo = 'Gerente'
+WHERE cd_funcionario = 5;
+
+UPDATE mc_funcionario
+SET vl_salario = vl_salario * 1.12
+WHERE cd_funcionario = 5;
+
+
+--> d)
+
+select * from mc_end_cli;
+
+UPDATE mc_end_cli
+SET st_end = 'I'
+WHERE nr_cliente = 3;
+
+UPDATE mc_end_cli
+SET dt_termino = TO_DATE('14/10/2024', 'DD/MM/YYYY')
+WHERE nr_cliente = 3;
+
+--> e)
+
+select * from mc_estado;
+select * from mc_cidade;
+
+DELETE FROM mc_estado
+WHERE sg_estado = 'RJ';
+
+--> f)
+
+select * from mc_produto;
+
+UPDATE mc_produto
+SET st_produto = 'X'
+WHERE cd_produto = 4;
+
+--> g)
+
+  
 commit;
